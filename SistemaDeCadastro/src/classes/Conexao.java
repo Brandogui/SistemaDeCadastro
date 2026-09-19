@@ -13,9 +13,11 @@ public class Conexao {
 		public static Connection faz_Conexao() throws SQLException {
 			
 			try {
-				
+				//Caso você queira testar esse código terá que criar uma tabela no MySQL, lá você terá um usuário root
+				//Nele você poderá ou não colocar uma senha, caso opte por colocar, digite-a no campo (suaSenha entre aspas)
+				//Caso deixe a senha em branco use aspas SEM ESPAÇO, caso contrário ele interpreta que sua senha é espaco.
 				Class.forName("com.mysql.jdbc.Driver");
-				return DriverManager.getConnection("jdbc:mysql://localhost/db_senhas","root","@Gui313301313");
+				return DriverManager.getConnection("jdbc:mysql://localhost/db_senhas","root","suaSenha");
 				
 			} catch (ClassNotFoundException e) {
 				
