@@ -8,7 +8,11 @@ public class Conexao {
 		
 	private String caminho = "jdbc:mysql://localhost/db_senhas";
 	private String usuario = "root";
-	private String senha = "@Gui313301313";
+	
+	//Caso você queira testar esse código terá que criar uma tabela no MySQL, lá você terá um usuário root
+	//Nele você poderá ou não colocar uma senha, caso opte por colocar, digite-a no campo (suaSenha entre aspas)
+	//Caso deixe a senha em branco use aspas SEM ESPAÇO, caso contrário ele interpreta que sua senha é espaco.
+	private String senha = "suaSenha";
 	
 		public static Connection faz_Conexao() throws SQLException {
 			
